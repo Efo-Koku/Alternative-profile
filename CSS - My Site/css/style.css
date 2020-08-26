@@ -1,0 +1,285 @@
+/*
+margin: 0; sets the margin for all four sides of the body element to 0 (no need to specify the unit e.g px etc. when it's 0),
+ thereby removing any spacing/gaps on all four sides.
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color:#40514E;
+ 
+}
+
+/*
+margin-top: 0; removes the gap at the top of the h1 element.
+*/
+
+h1 {
+  margin: 50px auto 0 auto; /* Using the circle shorthand to set all four margin sides; top, bottom, left, right. 
+  The circle shorthand goes clockwise.
+  */
+  font-family: "Sacramento", cursive;
+  font-size: 4.625rem;
+  color:#66BFBF;
+
+  /*
+  Line-height:2 -> This increases the gap between the top h1 and the bottom h2.
+  */
+}
+
+  /*
+To make the value of the font-size dynamic so that it can be changed in Setting/Preferences on the website
+by people with accesibility issues; we need to use either percentage % or em or rem instead of pixels(px). 
+Pixels(px) are static and rem and em are dynamic.
+
+For example: a 100% font-size is actually 16px or 1em. So if we wanted 90px, we need to: 90px/16px = 5.625em or 5.625rem (5.625x100 = 562.5 %). 
+Therefore 562.5% or 5.625em or 5.625rem is the equivalent of 90px.
+
+Bear in mind, when using em or % in the font-size, the value is inherited, e.g, if the font-size of the body element
+is 2em, it would also inherit(added to) whatever value the font-size of the h1 or h2 element has; 
+h1:562.5% or 562.5em = 562.5em + 2em = 564.5em, thereby making the overall font-size on the page bigger.
+
+In CSS3, rem(root em) is recommended, other elements (e.g body element) do not inherit the rem value and it is the most adaptable.
+
+To convert pixels(px) into rem: remember that 1em or 1rem is 16px. So for a 40px target; 40px/16px = 2.5rem.
+    */
+
+
+    .pro{
+      text-decoration: underline;
+      color:#66BFBF;
+      font-weight:normal;
+      
+    }
+
+
+span {
+  font-weight: bold;
+  color: #844685;
+  
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color:#66BFBF;
+  font-weight:normal;
+  padding-bottom: 10px;
+  
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color:#11999E;
+  
+}
+
+
+hr {
+    border: dotted #EAF6F6 6px; 
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+p{ 
+    font-size: 0.9rem;
+    line-height: 2;
+    
+}
+
+a {
+    color:#11999E;
+    font-family:"Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color:#EAF6F6;
+}
+
+
+.efo {
+ width: 13%;
+}
+
+.flaticon {
+ width: 25%;
+ float:left;
+ margin-bottom: 40px;
+ margin-right: 30px;
+}
+
+/*
+The height: or width: can be used to change the image size.
+*/
+
+.bjj {
+  width: 25%;
+  float:right;
+  margin-right: 30px;
+}
+
+.top-container {
+  background-color: #edf4f2;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+margin: 100px 0;
+}
+
+.bottom-container {
+  background-color:#66BFBF;
+  padding: 50px 0 20px;
+
+}
+
+
+.intro {
+    width: 30%;
+    margin: auto;
+    font-size: 0.9rem;
+}
+
+
+/*.
+contact-message {
+    width: 25%;
+    margin: 40px auto 60px;
+    font-size: 1rem;
+}
+*/
+
+.skill-row {
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+/*
+Margin: auto; sets the skill-row to the centre of the screen.
+*/
+
+/*
+Using the "Clear" function is the opposite of the "Float" fucntion. For example, in the code below, 
+the text paragraph will be shifted and placed below the images on the website.
+
+ONLY USE FLOAT WHEN ABSOLUTELY NECESSARY AND ONLY FOR WRAPPING TEXT AROUND AN IMAGE. 
+DO NOT USE FLOAT FOR POSITIONING.
+
+.How-I-Started {
+    clear:left;
+}
+
+.Grappling-Training {
+    clear:right;
+}
+*/
+
+.skills{
+    margin-top: 70px;
+
+}
+
+/*.get-in-touch {
+    margin-top:70px;
+}
+*/
+
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    margin: 10% 10%;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+  .linkedin-icon{
+    color:#EAF6F6;
+    font-size: 50px;
+  
+ 
+  }
+
+
+  /*
+  .linkedin-icon{
+    color:#EAF6F6;
+    font-size: 0.8rem;
+    padding: 20px 0;
+  }
+*/
+
+/*.footer-link1 {
+    color:#11999E;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+*/
+
+
+/*.footer-link2 {
+    color:#11999E;
+   margin-left: 50px;
+   text-decoration: none;
+}
+
+.footer-link3 {
+    color:#11999E;
+    margin-left: 50px;
+    text-decoration: none;
+
+}
+*/
+
+
+.copyright { 
+    color:#EAF6F6;
+    font-size: 0.8rem;
+    padding: 20px 0;
+
+    /*
+That's 20px spacing for top and bottom and 0 for left and right.
+    */
+}
