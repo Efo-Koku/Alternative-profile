@@ -220,8 +220,8 @@ DO NOT USE FLOAT FOR POSITIONING.
     color: #ffffff;
     font-size: 15px;
     padding: 10px 20px 10px 20px;
-    margin: 10% 10%;
     text-decoration: none;
+   
   }
   
   .btn:hover {
@@ -233,6 +233,11 @@ DO NOT USE FLOAT FOR POSITIONING.
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+
+  .work-together {
+    margin: 40px 0;
+  }
+
 
   .linkedin-icon{
     color:#EAF6F6;
